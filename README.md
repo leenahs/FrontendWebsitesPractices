@@ -1,2 +1,2 @@
-# Simple-Web-Frontend-Practices
+# Web Frontend Practices
 A collection of all frontend websites and UI practices
