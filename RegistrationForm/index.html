@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ? Add password check if it's in use then mention the user's using it-->
+<!-- TODO: Add password check. If it's in use then mention the user's using it-->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="center">Registration Form</h1>
-        <p class="center">Please fill out this form with the required information</p>
+        <h1 class="text-center">Registration Form</h1>
+        <p class="text-center">Please fill out this form with the required information</p>
         <section>
-            <form class="create-form">
+            <form method="post" action="action_page.php" class="create-form">
                 <fieldset>
                     <label for="fname">
                         First Name
@@ -35,16 +35,19 @@
                         <input type="password" id="password" name="repeat-pass" required="">
                     </label>
                 </fieldset>
+                <hr>
                 <!-- * section 2 -->
                 <fieldset>
-
+                    <input id="personal-account" type="radio">
+                    <label for="personal-account">Personal Account</label>
+                    <input type="radio">
+                    <label>Business Account</label>
+                    <input type="checkbox" id="terms-conditions" name="terms-conditions" required="yes">
+                    <label>Terms and Conditions</label>
                 </fieldset>
             </form>
         </section>
         <hr>
     </div>
 </body>
-<footer>
-    
-</footer>
 </html>
