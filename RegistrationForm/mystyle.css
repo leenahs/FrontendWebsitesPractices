@@ -14,13 +14,13 @@ fieldset{
 
 .container{
     margin: 100px;
-    max-width: 500px;
-    min-height: 300px;
+    /* max-width: 500px;
+    min-height: 300px; */
 }
 
 .container section{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 34%;
+    margin-right: 34%;
 }
 
 .create-form{
@@ -30,4 +30,12 @@ fieldset{
 label{
     display: block;
     margin: 0.5rem 0;
+}
+
+input{
+    background-color: rgb(38, 34, 47);
+    border-color: rgb(104, 97, 110);
+    color: whitesmoke;
+    height: 25px;
+    width: 100%;
 }
