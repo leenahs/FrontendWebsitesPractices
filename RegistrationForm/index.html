@@ -14,26 +14,16 @@
         <section>
             <form method="post" action="action_page.php" class="create-form">
                 <fieldset>
-                    <label for="fname">
-                        First Name
-                        <input type="text" id="fname" name="fname" required="">
-                    </label>
-                    <label for="lname">
-                        Last Name
-                        <input type="text" id="lname" name="lname" required="">
-                    </label>
-                    <label for="email">
-                        Email
-                        <input type="email" id="email" name="email" required="">
-                    </label for="fname">
-                    <label for="new-pass">
-                        New Password
-                        <input type="password" id="password" name="new-pass" required="">
-                    </label>
-                    <label for="repeat-pass">
-                        Repeat New Password
-                        <input type="password" id="password" name="repeat-pass" required="">
-                    </label>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required="">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required="">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required="">
+                    <label for="new-pass">New Password</label>
+                    <input type="password" id="password" name="new-pass" required="">
+                    <label for="repeat-pass">Repeat New Password</label>
+                    <input type="password" id="password" name="repeat-pass" required="">
                 </fieldset>
                 <hr>
                 <!-- * section 2 -->
@@ -43,7 +33,24 @@
                     <input type="radio">
                     <label>Business Account</label>
                     <input type="checkbox" id="terms-conditions" name="terms-conditions" required="yes">
-                    <label>Terms and Conditions</label>
+                    <label>Terms and Conditions</label  >
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <label>Upload your CV</label>
+                    <input type="file">
+                    <label>Your birthdate</label>
+                    <input type="date">
+                    <label> How did you hear about us?</label>
+                    <select>
+                        <option>Select an option...</option>
+                        <option>LinkedIn</option>
+                        <option>Twitter</option>
+                        <option>FaceBook</option>
+                        <option>Indeed</option>
+                        <option>Bayt.com</option>
+                    </select>
+                    <label>Your summary</label>
                 </fieldset>
             </form>
         </section>
