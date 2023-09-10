@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
@@ -15,43 +15,45 @@
             <form method="post" action="action_page.php" class="create-form">
                 <fieldset>
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname" required="">
+                    <input type="text" id="fname" name="fname" value="" required placeholder="Your first name">
                     <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname" required="">
+                    <input type="text" id="lname" name="lname" value="" required placeholder="Your last name">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required="">
+                    <input type="email" id="email" name="email" required>
                     <label for="new-pass">New Password</label>
-                    <input type="password" id="password" name="new-pass" required="">
+                    <input type="password" id="password" name="new-pass" required>
                     <label for="repeat-pass">Repeat New Password</label>
-                    <input type="password" id="password" name="repeat-pass" required="">
+                    <input type="password" id="password" name="repeat-pass" required>
                 </fieldset>
                 <hr>
                 <!-- * section 2 -->
                 <fieldset>
-                    <input id="personal-account" type="radio">
-                    <label for="personal-account">Personal Account</label>
-                    <input type="radio">
-                    <label>Business Account</label>
+                    <input id="personal-account" type="radio" name="account-type">
+                    <label for="personal-account">Personal Account</label><br>
+                    <input id="business-account" type="radio" name="account-type">
+                    <label for="business-account">Business Account</label><br>
                     <input type="checkbox" id="terms-conditions" name="terms-conditions" required="yes">
-                    <label>Terms and Conditions</label  >
+                    <label for="terms-conditions">I accept <a href=""></a>Terms and Conditions</label><br>
                 </fieldset>
                 <hr>
                 <fieldset>
-                    <label>Upload your CV</label>
-                    <input type="file">
-                    <label>Your birthdate</label>
-                    <input type="date">
-                    <label> How did you hear about us?</label>
-                    <select>
+                    <label for="cv">Upload your CV</label>
+                    <input type="file" id="cv">
+                    <label for="birthdate">Your birthdate</label>
+                    <input type="date" id="birthdate">
+                    <label for="how-option"> How did you hear about us?</label>
+                    <select id="how-option">
                         <option>Select an option...</option>
-                        <option>LinkedIn</option>
-                        <option>Twitter</option>
-                        <option>FaceBook</option>
-                        <option>Indeed</option>
-                        <option>Bayt.com</option>
+                        <option id="linkedin">LinkedIn</option>
+                        <option id="twitter">Twitter</option>
+                        <option id="facebook">FaceBook</option>
+                        <option id="Indeed">Indeed</option>
+                        <option id="bayt">Bayt.com</option>
                     </select>
                     <label>Your summary</label>
+                    <textarea placeholder="Your summary"></textarea>
                 </fieldset>
+                <button>Submit</button>
             </form>
         </section>
         <hr>
