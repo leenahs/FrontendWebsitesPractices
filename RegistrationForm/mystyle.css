@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(79, 84, 97);
+    background-color: rgb(95, 101, 115);
     color: rgb(248, 245, 240);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -13,18 +13,31 @@ fieldset{
 }
 
 .container{
-    margin: 100px auto;
-    /* max-width: 500px;
-    min-height: 300px; */
+    margin: 2cm auto 2cm auto;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: rgb(65, 64, 78);
+    opacity: 0.7;
 }
 
 .container section{
-    margin-left: 34%;
-    margin-right: 34%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
 }
 
 .create-form{
     width: 100%;
+}
+
+#termsPopup{
+    display: none;
+    /* position: fixed; */
+    border: 3px solid blueviolet;
+    background-color: rgb(146, 114, 72);
 }
 
 label{
@@ -33,11 +46,11 @@ label{
 }
 
 input, select, textarea{
-    background-color: rgb(48, 52, 65);
+    background-color: rgb(32, 36, 48);
     border-color: transparent;
     border-radius: 3px;
     color: whitesmoke;
-    /* height: 25px; */
+    height: 25px;
     width: 100%;
 }
 
@@ -48,5 +61,29 @@ input[type="radio"], input[type="checkbox"]{
 }
 
 #cv{
-    padding: 2px 2px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+.btn, button{
+    display: block;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 5px;
+    width: 20%;
+    padding: 8px;
+}
+
+.link{
+    text-decoration: underline;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+a{
+    color: rgb(248, 245, 240);
 }
