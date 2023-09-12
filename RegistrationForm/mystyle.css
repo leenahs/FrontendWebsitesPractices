@@ -1,15 +1,24 @@
 body{
-    background-color: rgb(95, 101, 115);
+    background-color: rgb(125, 130, 143);
     color: rgb(248, 245, 240);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-fieldset{
-    border: none;
-}
-
 .text-center{
     text-align: center;
+}
+
+a, .link{
+    text-decoration: underline;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.star{
+    margin-left: 3px;
+    color: rgb(197, 198, 255);
 }
 
 .container{
@@ -29,15 +38,12 @@ fieldset{
     padding-bottom: 5%;
 }
 
-.create-form{
-    width: 100%;
+fieldset{
+    border: none;
 }
 
-#termsPopup{
-    display: none;
-    /* position: fixed; */
-    border: 3px solid blueviolet;
-    background-color: rgb(146, 114, 72);
+.create-form{
+    width: 100%;
 }
 
 label{
@@ -65,7 +71,7 @@ input[type="radio"], input[type="checkbox"]{
     padding-left: 3px;
 }
 
-.btn, button{
+button, .btn{
     display: block;
     border: none;
     border-radius: 6px;
@@ -76,14 +82,13 @@ input[type="radio"], input[type="checkbox"]{
     padding: 8px;
 }
 
-.link{
-    text-decoration: underline;
-}
-
 button:hover{
     opacity: 1;
 }
 
-a{
-    color: rgb(248, 245, 240);
+#termsPopup{
+    display: none;
+    /* position: fixed; */
+    border: 3px solid blueviolet;
+    background-color: rgb(146, 114, 72);
 }

@@ -13,35 +13,41 @@
         <h1 class="text-center">Registration Form</h1>
         <p class="text-center">Please fill out this form with the required information</p>
         <section>
+            <div class="popup" id="termsPopup">
+                <p>hi</p>
+                <button onclick="closePopup()">Close</button>
+            </div>
             <form method="post" action="action_page.php" class="create-form">
+                <!-- * section 1 -->
                 <fieldset>
-                    <label for="fname">First Name</label>
+                    <label for="fname">First Name</label><span class="star">*</span>
                     <input type="text" id="fname" name="fname" value="" placeholder="Enter first name" required>
-                    <label for="lname">Last Name</label>
+                    <label for="lname">Last Name</label><span class="star">*</span>
                     <input type="text" id="lname" name="lname" value="" placeholder="Enter last name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
-                    <label for="new-pass">New Password</label>
-                    <input type="password" id="password" name="new-pass" placeholder="Enter minimum 8 characters" required>
-                    <label for="repeat-pass">Repeat New Password</label>
-                    <input type="password" id="password" name="repeat-pass" placeholder="Re-enter minimum 8 characters" required>
+                    <label for="email">Email</label><span class="star">*</span>
+                    <input type="email" id="email" name="email" value="" placeholder="example@example.com" required>
+                    <label for="new-pass">New Password</label><span class="star">*</span>
+                    <input type="password" id="password" name="new-pass" value="" placeholder="Enter minimum 8 characters" required>
+                    <label for="repeat-pass">Repeat New Password</label><span class="star">*</span>
+                    <input type="password" id="password" name="repeat-pass" value="" placeholder="Re-enter minimum 8 characters" required>
                 </fieldset>
                 <hr>
                 <!-- * section 2 -->
                 <fieldset>
-                    <input id="personal-account" type="radio" name="account-type">
+                    <!-- <input id="personal-account" type="radio" name="account-type">
                     <label for="personal-account">Personal Account</label><br>
                     <input id="business-account" type="radio" name="account-type">
-                    <label for="business-account">Business Account</label><br>
+                    <label for="business-account">Business Account</label><br> -->
                     <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
-                    <label for="terms-conditions">I accept</label> <span class="link" onclick="openPopup()">Terms and Conditions</span><br>
+                    <label for="terms-conditions">I accept</label> <a class="link" onclick="openPopup()">Terms and Conditions</a><span class="star">*</span><br>
                 </fieldset>
                 <hr>
+                <!-- * section 3 -->
                 <fieldset>
-                    <label for="cv">Upload your CV</label>
-                    <input type="file" id="cv">
-                    <label for="birthdate">Your birthdate</label>
-                    <input type="date" id="birthdate">
+                    <label for="cv">Upload your CV</label><span class="star">*</span>
+                    <input type="file" id="cv" required>
+                    <label for="birthdate">Your birthdate</label><span class="star">*</span>
+                    <input type="date" id="birthdate" required>
                     <label for="option"> How did you hear about us?</label>
                     <select name="options" required>
                         <option>Select an option...</option>
@@ -56,10 +62,6 @@
                 </fieldset>
                 <button class="btn" type="submit">Submit</button>
             </form>
-            <div class="popup" id="termsPopup">
-                <p>hi</p>
-                <button onclick="closePopup()">Close</button>
-            </div>
         </section>
     </div>
 </body>
